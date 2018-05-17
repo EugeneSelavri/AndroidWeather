@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">WeatherApp</string>
     <string name="text">Weather</string>
+    <string name="date">17 мая, четверг</string>
+    <string name="airTemp">Температура воздуха: +20 градусов</string>
+    <string name="waterTemp">Температура воды: +10</string>
+    <string name="wind">Скорость ветра, м/с: 2, В</string>
 </resources>

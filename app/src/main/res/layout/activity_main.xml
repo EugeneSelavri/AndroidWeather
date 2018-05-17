@@ -16,4 +16,35 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      >
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:inputType="date"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:text="@string/airTemp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:text="@string/waterTemp" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:text="@string/wind" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
