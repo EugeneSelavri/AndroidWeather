@@ -6,45 +6,76 @@
     android:layout_height="match_parent"
     tools:context="ru.geekbrains.weatherapp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text"
-        app:layout_constraintVertical_bias="0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
         android:orientation="vertical"
-      >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText3"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height"
-            android:inputType="date"
-            android:text="@string/date" />
+            android:id="@+id/enter_city"
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/hint"
+            android:inputType="text"
+            android:textAlignment="center" />
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/height"
+            android:layout_height="wrap_content"
+            android:text="@string/display"
+            android:layout_marginBottom="@dimen/disp_margin"
+            android:layout_marginTop="@dimen/disp_margin"/>
+
+        <CheckBox
+            android:id="@+id/air_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/airTemp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height"
+        <CheckBox
+            android:id="@+id/water_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/waterTemp" />
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height"
+
+        <CheckBox
+            android:id="@+id/pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pressure" />
+
+        <CheckBox
+            android:id="@+id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/wind" />
+
+        <CheckBox
+            android:id="@+id/wet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wet" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weather"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/btn_margin"/>
+
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
