@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">WeatherApp</string>
     <string name="text">Weather</string>
+    <string name="date">21 мая, понедельник</string>
+    <string name="airTemp">Температура воздуха</string>
+    <string name="waterTemp">Температура воды</string>
+    <string name="wind">Скорость ветра</string>
+    <string name="pressure">Атмосферное давление</string>
+    <string name="wet">Влажность</string>
+    <string name="display">Отобразить:</string>
+    <string name="hint">Введите город</string>
+    <string name="weather">Узнать погоду</string>
+    <string name="in_city">В городе</string>
 </resources>
